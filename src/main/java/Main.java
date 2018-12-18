@@ -1,3 +1,4 @@
+import histogram.HistogramFacade;
 import histogram.SimpleGraphGenerator;
 
 public class Main
@@ -12,5 +13,8 @@ public class Main
 
         System.out.println(graph);
 
+        HistogramFacade histogramFacade = new HistogramFacade();
+
+        histogramFacade.saveHistogramToCSV(text, "histogram.csv");
     }
 }
