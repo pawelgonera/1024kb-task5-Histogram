@@ -27,7 +27,7 @@ public class SimpleGraphGenerator
             histogramGraph.append(element.getKey()).append("|");
             for(int i = 0; i < element.getValue(); i++)
                 histogramGraph.append(CHAR);
-            histogramGraph.append(NEW_LINE);
+            histogramGraph.append(element.getValue()).append(NEW_LINE);
 
         }
 
